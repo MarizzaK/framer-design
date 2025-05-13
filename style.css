@@ -175,7 +175,7 @@ header h2 {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url("assets/images/jake-hills-bt-Sc22W-BE-unsplash.jpg");
+  background-image: url("assets/images/footer_background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -265,7 +265,6 @@ header h2 {
 
   .cta-button {
     padding: 10px 20px;
-    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
