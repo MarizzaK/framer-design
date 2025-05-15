@@ -34,14 +34,14 @@ header {
 header h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: #000000;
   font-weight: bold;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 header h2 {
   font-size: 1.5rem;
-  color: #fff;
+  color: #121111;
   font-weight: 300;
   line-height: 1.5;
 }
@@ -57,10 +57,6 @@ header h2 {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-}
-.blur-overlay {
-  position: absolute;
-  top: 0;
 }
 
 .hero-image {
@@ -89,19 +85,20 @@ header h2 {
   width: 485px;
   height: 225px;
 }
-
 .glass-box h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 1px 0 #c7c8ca, 0 2px 0 #b1b3b6, 0 3px 0 #9d9fa2,
+    0 4px 0 #8a8c8e, 0 5px 0 #77787b, 0 6px 0 #636466, 0 7px 0 #4d4d4f,
+    0 8px 7px #001135;
 }
 
 .glass-box h2 {
   font-size: 1.5rem;
   font-weight: 300;
-}
-
-.highlight {
-  color: #fd7127;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .three-boxes {
@@ -111,26 +108,44 @@ header h2 {
   flex-wrap: wrap;
   margin-top: 10%;
   margin-bottom: 10%;
+  perspective: 1000px;
 }
 
 .box {
-  width: 250px;
-  height: 300px;
+  width: 282px;
+  height: 320px;
   border-radius: 12px;
   overflow: hidden;
   background-color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.1);
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
 }
 
 .box:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: rotateY(15deg) rotateX(15deg);
+}
+/*
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
+.box:hover {
+  animation: float 3s ease-in-out infinite;
+}
+*/
 .box-top {
   height: 100px;
   width: 100%;
@@ -141,7 +156,16 @@ header h2 {
   z-index: 0;
   transition: background-color 0.3s ease, height 0.4s ease;
 }
+.box-top.color-1 {
+  background: linear-gradient(135deg, #ffebd5, #ffccaa);
+}
+.box-top.color-2 {
+  background: linear-gradient(135deg, #dcfbe6, #a8e6cf);
+}
 
+.box-top.color-3 {
+  background: linear-gradient(135deg, #cef9fd, #a0e7e5);
+}
 .box:hover .box-top {
   height: 100%;
 }
@@ -291,6 +315,8 @@ footer {
   border-radius: 8px;
   max-width: 600px;
   margin: 0 auto;
+  width: 500px;
+  height: 155px;
 }
 
 .footer-title h3 {
@@ -319,10 +345,11 @@ footer {
 .cta-button:hover {
   background-color: #e65c00;
 }
-
+/*
 .highlight {
-  color: #fd7127;
-}
+   color: #fd7127;
+  color: #ffffff;
+} */
 .bar-heading {
   text-align: center;
   font-size: 2rem;
@@ -338,21 +365,53 @@ footer {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 1rem;
+  counter-reset: bar-counter;
+}
+.bar-1::before,
+.bar-2::before,
+.bar-3::before {
+  content: attr(data-number);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 1rem;
+  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #bbb, 3px 3px 0 #aaa;
 }
 
 .bar {
+  position: relative;
   color: white;
   font-weight: 500;
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  line-height: 1.5;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  line-height: 1.6;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
+.bar.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+/*
+.bar:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}*/
+
+/*.bar span {
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+*/
 .bar-1 {
   background-color: #ff6b35;
   width: 85%;
@@ -365,7 +424,7 @@ footer {
 
 .bar-3 {
   background-color: #fce8db;
-  color: #333;
+  /*color: #333;*/
   width: 65%;
 }
 

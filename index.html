@@ -107,16 +107,16 @@
     <section>
       <h2 class="bar-heading">Skicka din ansökan</h2>
       <div class="container bar-section">
-        <div class="bar bar-1">
+        <div class="bar bar-1" data-number="1">
           <span>Mejla CV</span>
         </div>
-        <div class="bar bar-2">
+        <div class="bar bar-2" data-number="2">
           <span>
             Bifoga ett projekt <br />(länk om publicerad eller skärminspelning
             funkar också bra).
           </span>
         </div>
-        <div class="bar bar-3">
+        <div class="bar bar-3" data-number="3">
           <span>Berätta också gärna varför du vill göra LIA hos oss.</span>
         </div>
       </div>
@@ -134,5 +134,28 @@
         </a>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const bars = document.querySelectorAll(".bar");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              } else {
+                entry.target.classList.remove("visible");
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+
+        bars.forEach((bar, index) => {
+          bar.style.transitionDelay = `${index * 0.2}s`;
+          observer.observe(bar);
+        });
+      });
+    </script>
   </body>
 </html>
