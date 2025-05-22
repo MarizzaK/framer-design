@@ -1,31 +1,94 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Internship sida</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <header class="hero animated-gradient">
-      <div class="overlay">
-        <div class="hero-content">
+      <div class="overlay hero-layout">
+        <div class="hero-text">
           <h1>LIA hos <span>Techpilots</span></h1>
           <p>
             En modern praktikplats för framtidens webbutvecklare & designers.
           </p>
           <a href="#apply" class="cta-button">Ansök nu</a>
         </div>
+        <div class="hero-image">
+          <div class="image-wrapper">
+            <img
+              src="assets/images/latest_1-1-removebg-preview.png"
+              alt="Hero Image"
+            />
+            <img
+              src="assets/images/tp-icon.png"
+              alt="Icon"
+              class="icon-on-image"
+            />
+          </div>
+        </div>
       </div>
     </header>
+    <div class="band">
+      <div class="item">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 2C7.03 2 3 6.03 3 11c0 3.73 3.33 6.93 7.5 6.99V21c0 .55.45 1 1 1s1-.45 1-1v-3h2.5c1.24 0 2.5-1.11 2.5-2.5 0-1.24-1.11-2.5-2.5-2.5H8.5c-.55 0-1-.45-1-1s.45-1 1-1h6c2.21 0 4-1.79 4-4s-1.79-5-4-5z"
+          />
+        </svg>
+        <span>Unik design</span>
+      </div>
+      <div class="item">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 2v13h3v7l7-15h-4l3-7z" />
+        </svg>
+        <span>Prestanda</span>
+      </div>
+      <div class="item">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M9 21h6v-1.5H9V21zm3-19C7.48 2 4 5.48 4 10c0 2.79 2.06 5.13 4.8 5.74V18h6v-2.26c2.74-.61 4.8-2.95 4.8-5.74 0-4.52-3.48-8-7.8-8zM12 16a4 4 0 01-4-4c0-1.31.68-2.47 1.7-3.14L12 8l2.3-1.14A3.997 3.997 0 0116 12a4 4 0 01-4 4z"
+          />
+        </svg>
+        <span>Innovation</span>
+      </div>
+      <div class="item">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 10l-3-3-5 5-5-5-3 3 8 8z" />
+        </svg>
+        <span>Samarbete</span>
+      </div>
+      <div class="item">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M18 2H6c-1.1 0-2 .9-2 2v16a2 2 0 002 2h12V2zM8 18v-7h8v7H8z"
+          />
+        </svg>
+        <span>Lärande</span>
+      </div>
+    </div>
 
     <section>
+      <div class="section-header">
+        <h2>Vad du får <span class="highlight">uppleva</span></h2>
+        <p>
+          Under din LIA hos Techpilots får du praktisk erfarenhet i riktiga
+          projekt, där du växer både tekniskt och kreativt tillsammans med vårt
+          team.
+        </p>
+      </div>
+
       <div class="container three-boxes">
-        <div class="box">
+        <a href="#section1" class="box">
           <div class="box-top color-1">
             <div class="circle">
-              <img src="assets/icons/card1-icon.png" alt="" />
-              <i class="fa-solid fa-paper-plane"></i>
+              <i class="fa-solid fa-pencil-alt"></i>
             </div>
             <div class="gradient-overlay"></div>
           </div>
@@ -35,53 +98,115 @@
               webbprojekt - från idé och design till utveckling och lansering.
             </p>
           </div>
-        </div>
+        </a>
 
-        <div class="box">
+        <a href="#section2" class="box">
           <div class="box-top color-2">
             <div class="circle">
-              <img src="assets/icons/card2-icon.png" alt="" />
               <i class="fa-solid fa-comments"></i>
             </div>
           </div>
           <div class="box-content">
             <p>
               Hos oss får du arbeta med att utveckla hemsidor för riktiga
-              kunder, vilket ger dig praktiskt erfarenhet och ett stark
+              kunder, vilket ger dig praktisk erfarenhet och ett starkt
               portfolio.
             </p>
           </div>
-        </div>
+        </a>
 
-        <div class="box">
+        <a href="#section3" class="box">
           <div class="box-top color-3">
             <div class="circle">
-              <img src="assets/icons/card3-icon.png" alt="" />
-              <i class="fa-solid fa-rocket"></i>
+              <i class="fa-solid fa-tools"></i>
             </div>
           </div>
           <div class="box-content">
             <p>
-              Hos oss får du arbeta med att utveckla hemsidor för riktiga
-              kunder, vilket ger dig praktiskt erfarenhet och ett stark
-              portfolio.
+              Du får lära dig nya verktyg och tekniker inom webbutveckling som
+              hjälper dig att växa i din karriär.
             </p>
           </div>
-        </div>
+        </a>
       </div>
     </section>
 
-    <section>
-      <div class="container boxed-section text-image-section">
-        <div class="quote">
+    <section class="info-container">
+      <section class="info-section" id="section1">
+        <div class="color-badge" style="background: #ffcc80">
+          <i class="fa-solid fa-pencil-alt"></i>
+        </div>
+        <div class="info-content">
+          <h3>Lär dig hela processen från idé till lansering</h3>
           <p>
-            ”Jag fick ta ansvar för egna uppgifter och se mina idéer bli
-            verklighet.” <br />
-            <span>- Emma Karlsson</span>
+            Under din praktik får du vara med från projektets allra första steg
+            – att ta fram idéer och designkoncept. Du får insikt i hur man
+            skapar användarvänliga och estetiskt tilltalande webbsidor, samt hur
+            designen omsätts till fungerande produkter tillsammans med
+            utvecklarteamet. Här får du förståelse för vikten av kreativitet och
+            samarbete i hela webbutvecklingsprocessen.
           </p>
         </div>
-        <img src="/assets/images/person1_profile.jpg" alt="Bild till höger" />
+      </section>
+
+      <section class="info-section" id="section2">
+        <div class="color-badge" style="background: #a5d6a7">
+          <i class="fa-solid fa-comments"></i>
+        </div>
+        <div class="info-content">
+          <h3>Arbeta med verkliga projekt och kunder</h3>
+          <p>
+            Du kommer att arbeta hands-on med att utveckla hemsidor för riktiga
+            kunder, vilket ger dig ovärderlig erfarenhet och insikt i branschens
+            krav och förväntningar. Det innebär att du får hantera verkliga
+            utmaningar, deadlines och kundkommunikation – allt för att bygga ett
+            starkt och professionellt portfolio som hjälper dig i din framtida
+            karriär.
+          </p>
+        </div>
+      </section>
+
+      <section class="info-section" id="section3">
+        <div class="color-badge" style="background: #80deea">
+          <i class="fa-solid fa-tools"></i>
+        </div>
+        <div class="info-content">
+          <h3>Utveckla dina tekniska färdigheter</h3>
+          <p>
+            Hos oss får du möjlighet att lära dig och arbeta med de senaste
+            verktygen och teknikerna inom webbutveckling. Du kommer att upptäcka
+            nya metoder, ramverk och programvaror som används i branschen idag.
+            Detta gör att du inte bara växer som utvecklare utan även håller dig
+            uppdaterad med modern teknologi, vilket gör dig mer
+            konkurrenskraftig på arbetsmarknaden.
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <h2>
+          Vad våra <span class="highlight">tidigare LIA-studenter</span> säger
+        </h2>
+        <p>
+          Många av våra tidigare praktikanter har fått värdefulla erfarenheter
+          och gått vidare till spännande jobb inom branschen.
+        </p>
       </div>
+
+      <div class="container boxed-section text-image-section">
+        <div class="text-content">
+          <h3>Det roligaste var…</h3>
+          <p>
+            "Det roligaste var att få testa på nya verktyg. Jag insåg att det
+            finns så många olika vägar att gå när man skapar hemsidor"
+          </p>
+          <p class="text-name">- Linn Persson</p>
+        </div>
+        <img src="/assets/images/person1_profile.jpg" alt="Linn Persson" />
+      </div>
+
       <div class="container boxed-section text-image-section reverse">
         <div class="text-content">
           <h3>Det roligaste var…</h3>
@@ -91,90 +216,71 @@
           </p>
           <p class="text-name">- Linn Persson</p>
         </div>
-        <img src="/assets/images/person2_profile.jpg" alt="Bild till vänster" />
+        <img src="/assets/images/person2_profile.jpg" alt="Linn Persson 2" />
       </div>
     </section>
 
-    <section>
-      <h2 class="bar-heading">Så här söker du</h2>
-      <div class="container bar-section">
-        <div class="bar bar-1" data-number="1">
-          <span>Mejla CV</span>
+    <a href="#apply" id="apply"></a>
+
+    <section class="last-section">
+      <div class="form-wrapper">
+        <div class="section-header">
+          <h2 class="form-title">
+            Redo för <span class="highlight"> nästa steg</span>?
+          </h2>
+          <p class="form-text">Vi letar alltid efter nya stjärnor!</p>
         </div>
-        <div class="bar bar-2" data-number="2">
-          <span>
-            Bifoga ett projekt <br />(länk om publicerad eller skärminspelning
-            funkar också bra).
-          </span>
-        </div>
-        <div class="bar bar-3" data-number="3">
-          <span>Berätta också gärna varför du vill göra LIA hos oss.</span>
+
+        <div class="rectangle-row oval-rectangles">
+          <div class="transparent-rect transparent-rect1">
+            <h4>Bifoga CV</h4>
+            <div class="upload-box" id="drop-area">
+              <p>Dra in ditt CV här</p>
+              <p>eller</p>
+              <button id="fileSelectBtn">Välj fil</button>
+              <input
+                type="file"
+                id="fileElem"
+                accept=".pdf,.doc,.docx"
+                hidden
+              />
+              <p id="fileNameDisplay"></p>
+            </div>
+          </div>
+
+          <div class="transparent-rect transparent-rect2">
+            <h4>Bifoga tidigare projekt</h4>
+            <label for="projectLink">Länk till publicerat projekt</label>
+            <input type="url" id="projectLink" placeholder="https://..." />
+            <div class="upload-box" id="projectDropArea">
+              <p>Dra in din skärminspelning här</p>
+              <p>eller</p>
+              <button id="projectFileBtn">Välj video</button>
+              <input
+                type="file"
+                id="projectFileInput"
+                accept="video/*"
+                hidden
+              />
+              <p id="projectFileNameDisplay"></p>
+            </div>
+          </div>
+
+          <div class="transparent-rect transparent-rect3">
+            <h4>Varför vill du göra din LIA hos oss?</h4>
+            <textarea
+              id="liaReason"
+              placeholder="Skriv ditt svar här..."
+              rows="8"
+            ></textarea>
+            <p id="wordCount">0 / 150 ord</p>
+            <div class="submit-wrapper">
+              <button type="submit" class="submit-btn">Skicka ansökan</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
-    <footer>
-      <div class="container footer-title">
-        <h3>Är du redo att ta nästa steg?</h3>
-        <p>Vi ser fram emot att höra från dig!</p>
-        <a
-          href="mailto:info@techpilots.se?subject=LIA-ansökan&body=Hej%20Techpilots!"
-          class="cta-button"
-        >
-          info@techpilots.se
-        </a>
-      </div>
-    </footer>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const bars = document.querySelectorAll(".bar");
-
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-              } else {
-                entry.target.classList.remove("visible");
-              }
-            });
-          },
-          { threshold: 0.1 }
-        );
-
-        bars.forEach((bar, index) => {
-          bar.style.transitionDelay = `${index * 0.2}s`;
-          observer.observe(bar);
-        });
-      });
-      /**/
-
-      const hero = document.querySelector(".animated-gradient");
-
-      let targetX = 100;
-      let targetY = 100;
-      let currentX = 100;
-      let currentY = 100;
-
-      hero.addEventListener("mousemove", (e) => {
-        const rect = hero.getBoundingClientRect();
-        const x = ((e.clientX - rect.left) / rect.width) * 100;
-        const y = ((e.clientY - rect.top) / rect.height) * 100;
-
-        targetX = x;
-        targetY = y;
-      });
-
-      function animateGradient() {
-        currentX += (targetX - currentX) * 0.1;
-        currentY += (targetY - currentY) * 0.1;
-
-        hero.style.backgroundPosition = `${currentX}% ${currentY}%`;
-
-        requestAnimationFrame(animateGradient);
-      }
-
-      animateGradient();
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

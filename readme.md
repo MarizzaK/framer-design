@@ -13,19 +13,24 @@ ta inspo från korten
 skapa kontakt form- med endast en input-> e post
 
 21 maj
+Gjort klart
 
 - ta bort bakgrund från bilden
 - dela upp så man ser vart heron slutar
-- framhäv knapp
+- lägg till linje under huvudtitel
+- ta bort bakgrund i text för text image section
+- flytta upp text input ochh lägg submit knapp i form under
+- ta bort bollen -> byt ut till snygg rubrik-> byt ut under rubrik
+
+22 maj
+vad som är kvar
+
+- framhäv knapp i heron
+- fixa border på färgutan info section
+- skapa ram för hela content-> text image section
+
+ta upp till nästa möte:
 
 - flytta ner paragrafen och lägg till en liten huvudtiteln
 - ändra ikoner
-
-- lägg till linje under huvudtitel
-- fixa border på färgutan info section
-- ta bort bakgrund i text för text image section
-- skapa ram för hela content-> text image section
-- en rad till under rubriken
-- flytta up text input ochh lägg submit knapp i form under
-- ta bort bollen -> byt ut till snygg rubrik-> byt ut under rubrik
 - byt ut till vit bakgrund och och rama in elementen
