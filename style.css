@@ -69,7 +69,7 @@ html {
 .hero h1::after {
   content: "";
   display: block;
-  width: 150px;
+  width: 700px;
   height: 2px;
   background: linear-gradient(to right, white, transparent);
   position: absolute;
@@ -199,9 +199,9 @@ html {
 
 /*------------*/
 section {
-  background: white;
-  margin-top: 5rem;
-  padding: 2rem 1rem;
+  max-width: 1100px;
+  margin: 5rem auto;
+  padding: 20px;
   color: #333;
 }
 
@@ -277,6 +277,8 @@ section {
   margin-top: 50px;
   margin-bottom: 10%;
   perspective: 1000px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
 
 .box {
@@ -378,6 +380,8 @@ section {
 /*----------*/
 .info-container {
   margin-bottom: 15%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
 .info-section {
   position: relative;
@@ -439,7 +443,10 @@ section {
   margin: 5rem auto;
   position: relative;
 }
-
+.section-content-box {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
 .text-image-section.reverse {
   flex-direction: row-reverse;
 }
@@ -450,7 +457,6 @@ section {
   aspect-ratio: 4 / 5;
   object-fit: cover;
   transition: transform 0.3s ease;
-
   border-radius: 20px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
   position: relative;
@@ -475,7 +481,7 @@ section {
 .text-image-section img:first-of-type {
   border-radius: 50% 8% 50% 8% / 30% 50% 30% 50%;
 }
-/*ändra?*/
+
 .text-content {
   max-width: 380px;
   font-size: 1.15rem;
@@ -485,8 +491,6 @@ section {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   background: #fefefe;
   padding: 1.8rem 2rem;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -503,16 +507,12 @@ section {
 /* DESKTOPLÄGE - standard */
 /* === DESKTOPLÄGE (≥ 1024px) === */
 
-.form-title,
-.form-text {
-  color: white !important;
-}
 .last-section {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 4rem 1rem;
-  background: linear-gradient(to bottom, #7b2cbf, #ff69b4);
+
   min-height: 100vh;
   text-align: center;
   color: white;
@@ -522,7 +522,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1100px;
   width: 100%;
 }
 .section-header {
@@ -551,16 +551,16 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  min-width: 1500px;
-  max-width: 1550px;
+  min-width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
   position: relative;
 }
 
 .transparent-rect {
-  width: 300px;
+  width: 250px;
   height: 500px;
-  background: rgba(255, 255, 255, 0.15);
+  background: linear-gradient(to bottom, #7b2cbf, #ff69b4);
   border-radius: 16px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -582,11 +582,11 @@ section {
 .transparent-rect1 h4 {
   color: white;
   font-size: 1.5rem;
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
 }
 
 .upload-box {
-  width: 100%;
+  width: 90%;
   height: 250px;
   border: 2px dashed white;
   border-radius: 12px;
@@ -652,7 +652,7 @@ section {
 }
 
 #projectDropArea {
-  width: 100%;
+  width: 90%;
   height: 250px;
   border: 2px dashed white;
   border-radius: 12px;

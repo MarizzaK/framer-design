@@ -23,11 +23,10 @@ Gjort klart
 - ta bort bollen -> byt ut till snygg rubrik-> byt ut under rubrik
 - fixa border på färgutan info section
 
-22 maj
-ta upp till nästa möte:
+23 maj
 
-- framhäv knapp i heron
-- skapa ram för hela content-> text image section
-- flytta ner paragrafen och lägg till en liten huvudtiteln
-- ändra ikoner
-- byt ut till vit bakgrund och och rama in elementen
+- bild större i heron
+
+- fyll i vit utrymme i info section
+- rama in alla element men inte rubrik
+- dra strecket längre
